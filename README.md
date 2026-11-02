@@ -3,6 +3,7 @@
 A situation-based guide that helps non-Kannada speakers handle everyday life in Karnataka. Pick a situation or search in plain English, then see the Kannada phrase with its English-letter pronunciation and meaning, and listen to it at normal or slow speed.
 
 **Built for:** Kannada Digital Innovation Hackathon 2026
+**Live URL** https://the-real-kannada.onrender.com/
 
 ## Problem statement chosen
 
@@ -61,7 +62,7 @@ You need Python 3 installed. The site must be opened through a local server, bec
 
 ```bash
 # 1. Clone the repository
-git clone 
+git clone https://the-real-kannada.onrender.com/
 cd the-real-kannada
 
 # 2. Start a local server
