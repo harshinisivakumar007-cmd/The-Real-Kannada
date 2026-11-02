@@ -1,0 +1,36 @@
+{
+  "emergency": [
+    {"id": "em1", "kannada": "ಸಹಾಯ ಮಾಡಿ!", "pronunciation": "Sahaaya maadi!", "english": "Help!", "tags": ["help", "emergency", "urgent", "danger"]},
+    {"id": "em2", "kannada": "ನನಗೆ ಡಾಕ್ಟರ್ ಬೇಕು", "pronunciation": "Nanage doctor beku", "english": "I need a doctor", "tags": ["doctor", "emergency", "medical", "need"]},
+    {"id": "em3", "kannada": "ಆಂಬ್ಯುಲೆನ್ಸ್ ಕರೆಯಿರಿ", "pronunciation": "Ambulance kareyiri", "english": "Call an ambulance", "tags": ["ambulance", "call", "emergency", "hospital"]},
+    {"id": "em4", "kannada": "ಪೊಲೀಸರನ್ನು ಕರೆಯಿರಿ", "pronunciation": "Poleesarannu kareyiri", "english": "Call the police", "tags": ["police", "call", "theft", "crime", "emergency"]},
+    {"id": "em5", "kannada": "ಬೆಂಕಿ!", "pronunciation": "Benki!", "english": "Fire!", "tags": ["fire", "emergency", "danger"]},
+    {"id": "em6", "kannada": "ಇಲ್ಲಿ ಅಪಘಾತವಾಗಿದೆ", "pronunciation": "Illi apaghaatavaagide", "english": "There has been an accident here", "tags": ["accident", "emergency", "crash", "road"]},
+    {"id": "em7", "kannada": "ನನ್ನ ಫೋನ್ ಕಳೆದುಹೋಗಿದೆ", "pronunciation": "Nanna phone kaleduhogide", "english": "I have lost my phone", "tags": ["phone", "lost", "missing", "mobile"]},
+    {"id": "em8", "kannada": "ನನಗೆ ಉಸಿರಾಡಲು ಕಷ್ಟವಾಗುತ್ತಿದೆ", "pronunciation": "Nanage usiraadalu kashtavaaguttide", "english": "I am having trouble breathing", "tags": ["breathing", "breath", "emergency", "medical", "cannot breathe"]}
+  ],
+  "basics": [
+    {"id": "bs1", "kannada": "ನಮಸ್ಕಾರ", "pronunciation": "Namaskaara", "english": "Hello", "tags": ["hello", "hi", "greeting", "namaste"]},
+    {"id": "bs2", "kannada": "ಧನ್ಯವಾದಗಳು", "pronunciation": "Dhanyavaadagalu", "english": "Thank you", "tags": ["thanks", "thank you", "grateful"]},
+    {"id": "bs3", "kannada": "ಕ್ಷಮಿಸಿ", "pronunciation": "Kshamisi", "english": "Sorry / Excuse me", "tags": ["sorry", "excuse me", "pardon", "apology"]},
+    {"id": "bs4", "kannada": "ಹೌದು", "pronunciation": "Haudu", "english": "Yes", "tags": ["yes", "agree"]},
+    {"id": "bs5", "kannada": "ಇಲ್ಲ", "pronunciation": "Illa", "english": "No", "tags": ["no", "not"]},
+    {"id": "bs6", "kannada": "ನನಗೆ ಕನ್ನಡ ಗೊತ್ತಿಲ್ಲ", "pronunciation": "Nanage Kannada gottilla", "english": "I do not know Kannada", "tags": ["dont know", "kannada", "language", "understand"]},
+    {"id": "bs7", "kannada": "ದಯವಿಟ್ಟು ನಿಧಾನವಾಗಿ ಮಾತನಾಡಿ", "pronunciation": "Dayavittu nidhaanavaagi maatanaadi", "english": "Please speak slowly", "tags": ["slow", "slowly", "speak", "repeat", "understand"]}
+  ],
+  "numbers": [
+    {"id": "nm1", "kannada": "ಒಂದು", "pronunciation": "Ondu", "english": "One (1)", "tags": ["one", "1", "number"]},
+    {"id": "nm2", "kannada": "ಎರಡು", "pronunciation": "Eradu", "english": "Two (2)", "tags": ["two", "2", "number"]},
+    {"id": "nm3", "kannada": "ಮೂರು", "pronunciation": "Mooru", "english": "Three (3)", "tags": ["three", "3", "number"]},
+    {"id": "nm4", "kannada": "ನಾಲ್ಕು", "pronunciation": "Naalku", "english": "Four (4)", "tags": ["four", "4", "number"]},
+    {"id": "nm5", "kannada": "ಐದು", "pronunciation": "Aidu", "english": "Five (5)", "tags": ["five", "5", "number"]},
+    {"id": "nm6", "kannada": "ಆರು", "pronunciation": "Aaru", "english": "Six (6)", "tags": ["six", "6", "number"]},
+    {"id": "nm7", "kannada": "ಏಳು", "pronunciation": "Elu", "english": "Seven (7)", "tags": ["seven", "7", "number"]},
+    {"id": "nm8", "kannada": "ಎಂಟು", "pronunciation": "Entu", "english": "Eight (8)", "tags": ["eight", "8", "number"]},
+    {"id": "nm9", "kannada": "ಒಂಬತ್ತು", "pronunciation": "Ombattu", "english": "Nine (9)", "tags": ["nine", "9", "number"]},
+    {"id": "nm10", "kannada": "ಹತ್ತು", "pronunciation": "Hattu", "english": "Ten (10)", "tags": ["ten", "10", "number"]},
+    {"id": "nm11", "kannada": "ಇಪ್ಪತ್ತು", "pronunciation": "Ippattu", "english": "Twenty (20)", "tags": ["twenty", "20", "number", "price"]},
+    {"id": "nm12", "kannada": "ಐವತ್ತು", "pronunciation": "Aivattu", "english": "Fifty (50)", "tags": ["fifty", "50", "number", "price"]},
+    {"id": "nm13", "kannada": "ನೂರು", "pronunciation": "Nooru", "english": "One hundred (100)", "tags": ["hundred", "100", "number", "price"]}
+  ]
+}

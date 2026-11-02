@@ -1,0 +1,29 @@
+[
+  {
+    "title": "On the bus",
+    "lines": [
+      {"id": "cv1_1", "who": "You", "kannada": "ಈ ಬಸ್ ಮೈಸೂರಿಗೆ ಹೋಗುತ್ತದೆಯಾ?", "pronunciation": "Ee bus Mysoorige hoguttadeya?", "english": "Does this bus go to Mysuru?"},
+      {"id": "cv1_2", "who": "Conductor", "kannada": "ಹೌದು, ಹೋಗುತ್ತದೆ", "pronunciation": "Haudu, hoguttade", "english": "Yes, it goes."},
+      {"id": "cv1_3", "who": "You", "kannada": "ಟಿಕೆಟ್ ಎಷ್ಟು?", "pronunciation": "Ticket eshtu?", "english": "How much is the ticket?"},
+      {"id": "cv1_4", "who": "Conductor", "kannada": "ಐವತ್ತು ರೂಪಾಯಿ", "pronunciation": "Aivattu roopaayi", "english": "Fifty rupees."}
+    ]
+  },
+  {
+    "title": "At the clinic",
+    "lines": [
+      {"id": "cv2_1", "who": "You", "kannada": "ನನಗೆ ಆರೋಗ್ಯ ಸರಿಯಿಲ್ಲ", "pronunciation": "Nanage aarogya sariyilla", "english": "I am not feeling well."},
+      {"id": "cv2_2", "who": "Doctor", "kannada": "ಏನು ತೊಂದರೆ?", "pronunciation": "Enu tondare?", "english": "What is the problem?"},
+      {"id": "cv2_3", "who": "You", "kannada": "ನನಗೆ ತಲೆನೋವು ಇದೆ", "pronunciation": "Nanage talenovu ide", "english": "I have a headache."},
+      {"id": "cv2_4", "who": "Doctor", "kannada": "ಈ ಔಷಧಿ ತೆಗೆದುಕೊಳ್ಳಿ", "pronunciation": "Ee aushadhi tegedukolli", "english": "Take this medicine."}
+    ]
+  },
+  {
+    "title": "At a restaurant",
+    "lines": [
+      {"id": "cv3_1", "who": "You", "kannada": "ಒಂದು ಮಸಾಲೆ ದೋಸೆ ಕೊಡಿ", "pronunciation": "Ondu masale dose kodi", "english": "Please give me one masala dosa."},
+      {"id": "cv3_2", "who": "Waiter", "kannada": "ಬೇರೆ ಏನಾದರೂ ಬೇಕಾ?", "pronunciation": "Bere enaadaroo beka?", "english": "Do you need anything else?"},
+      {"id": "cv3_3", "who": "You", "kannada": "ನನಗೆ ನೀರು ಬೇಕು", "pronunciation": "Nanage neeru beku", "english": "I need water."},
+      {"id": "cv3_4", "who": "Waiter", "kannada": "ಸರಿ, ತರುತ್ತೇನೆ", "pronunciation": "Sari, taruttene", "english": "Okay, I will bring it."}
+    ]
+  }
+]

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The fake Kannada!</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Meie+Script&family=Noto+Sans+Kannada:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                padding-bottom: 40px;
+                background-color: #f8dfc4;
+                font-family: "Noto Sans Kannada", "Nirmala UI", system-ui, sans-serif;
+                color: #2b2118;
+            }
+            h1 { margin: 16px; }
+            .lav {
+                font-family: "Lavishly Yours", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .mei {
+                font-family: "Meie Script", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            /* Banner */
+            .image-container {
+                position: relative;
+                display: block;
+            }
+            .image-container img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .overlay-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                text-align: center;
+                color: white;
+                font-size: clamp(32px, 8vw, 70px);
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+
+            /* Situation images */
+            .fordiv {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 16px;
+                padding: 16px;
+            }
+            .image-wrapper {
+                position: relative;
+                width: 100%;
+                height: 300px;
+                overflow: hidden;
+                border-radius: 150px;
+                cursor: pointer;
+                border: 4px solid transparent;
+            }
+            .image-wrapper:hover { border-color: #c8102e; }
+            .image-wrapper.active { border-color: #c8102e; box-shadow: 0 0 0 4px #ffc72c; }
+            .image-wrapper:focus-visible { outline: 4px solid #ffc72c; outline-offset: 3px; }
+            .image-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            .image-wrapper .label {
+                position: absolute;
+                left: 50%;
+                bottom: 36px;
+                transform: translateX(-50%);
+                background: rgba(26, 31, 43, 0.8);
+                color: white;
+                font-weight: 600;
+                padding: 6px 16px;
+                border-radius: 999px;
+                white-space: nowrap;
+            }
+
+            /* Results */
+            #results { padding: 0 16px; max-width: 800px; margin: 0 auto; scroll-margin-top: 12px; }
+            #results h2 { margin: 8px 0 12px; }
+            .phrase {
+                background: white;
+                border-radius: 10px;
+                padding: 14px 16px;
+                margin-bottom: 12px;
+            }
+            .phrase h3 { margin: 0 0 4px; font-size: 1.6rem; }
+            .phrase p { margin: 2px 0; }
+            .phrase .pron { color: #c8102e; font-weight: 600; }
+            .phrase button {
+                margin: 10px 8px 0 0;
+                padding: 10px 16px;
+                font: inherit;
+                font-weight: 600;
+                border: 2px solid #1a1f2b;
+                border-radius: 6px;
+                background: white;
+                cursor: pointer;
+            }
+            .phrase button.play { background: #1a1f2b; color: white; }
+            .msg { padding: 16px; }
+            .search { padding: 0 16px; max-width: 800px;  }
+            .search input {
+                width: 100%;
+                font: inherit;
+                padding: 14px 18px;
+                border: 3px solid #1a1f2b;
+                border-radius: 999px;
+                background: white;
+            }
+            .search input:focus-visible { outline: 4px solid #ffc72c; outline-offset: 2px; }
+            .image-wrapper { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+            .image-wrapper:hover { transform: translateY(-6px) scale(1.02); }
+            .phrase { animation: rise 0.3s ease; }
+            @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+            @media (prefers-reduced-motion: reduce) {
+                .image-wrapper, .phrase { transition: none; animation: none; }
+            }
+            dialog#big {
+                 width: min(92vw, 720px);
+                border: 0;
+                border-radius: 12px;
+                 padding: 32px 24px;
+                text-align: center;
+                border-top: 12px solid #ffc72c;
+                border-bottom: 12px solid #c8102e;
+            }
+            dialog#big::backdrop { background: rgba(26, 31, 43, 0.75); }
+            #bigKn { font-size: clamp(2.2rem, 9vw, 4rem); font-weight: 700; margin: 0 0 12px; }
+            #bigPron { font-size: 1.4rem; color: #c8102e; font-weight: 600; margin: 0; }
+            #bigEng { font-size: 1.1rem; margin: 6px 0 20px; }
+            dialog#big button { font: inherit; font-weight: 600; padding: 10px 18px; margin: 0 6px; border: 2px solid #1a1f2b; border-radius: 6px; background: white; cursor: pointer; }
+        </style>
+    </head>
+    <body>
+        <div class="image-container">
+            <img src="images/background1.png" alt="Karnataka banner">
+            <div class="overlay-text">The Real Kannada</div>
+        </div>
+        <br>
+        <h1 lang="kn"><b>ನಮಸ್ಕಾರ</b></h1>
+        <h1><b>What are you looking for?</b></h1><br><br>
+        <div class="search">
+            <input id="q" type="search" placeholder="Or type what you need: lost, doctor, water, bus ticket" autocomplete="off" aria-label="Search phrases">
+        </div><br>
+        <div class="fordiv">
+            <div class="image-wrapper situation" data-key="food" role="button" tabindex="0" aria-label="Food phrases">
+                <img src="images/food.png" alt="Food"><span class="label" style="text-decoration-color: #7a2d00;">Food</span>
+            </div>
+            <div class="image-wrapper situation" data-key="healthcare" role="button" tabindex="0" aria-label="Healthcare phrases">
+                <img src="images/healthcare.png" alt="Healthcare"><span class="label" style="text-decoration-color: #7a2d00;">Healthcare</span>
+            </div>
+            <div class="image-wrapper situation" data-key="transport" role="button" tabindex="0" aria-label="Transport phrases">
+                <img src="images/transport.png" alt="Transport"><span class="label" style="text-decoration-color: #7a2d00;">Transport</span>
+            </div>
+            <div class="image-wrapper situation" data-key="directions" role="button" tabindex="0" aria-label="Directions phrases">
+                <img src="images/directions.png" alt="Directions"><span class="label" style="text-decoration-color: #7a2d00;">Directions</span>
+            </div>
+            <div class="image-wrapper situation" data-key="shopping" role="button" tabindex="0" aria-label="Shopping phrases">
+                <img src="images/shopping.png" alt="Shopping"><span class="label" style="text-decoration-color: #7a2d00;">Shopping</span>
+            </div>
+        </div>
+
+        <div id="results" aria-live="polite"></div>
+        <dialog id="big">
+            <p id="bigKn" lang="kn"></p>
+            <p id="bigPron"></p>
+            <p id="bigEng"></p>
+            <button onclick="playAudio(bigId, 1)">🔊 Play</button>
+            <button onclick="document.getElementById('big').close()">Close</button>
+        </dialog>
+        <script>
+            let data = {};
+            let loadFailed = false;
+            const audio = new Audio();
+
+            fetch("phrases.json")
+                .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+                .then(j => { data = j; })
+                .catch(() => { loadFailed = true; });
+
+            const boxes = document.querySelectorAll(".situation");
+            boxes.forEach(box => {
+                box.addEventListener("click", () => show(box.dataset.key));
+                box.addEventListener("keydown", e => {
+                    if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        show(box.dataset.key);
+                    }
+                });
+            });
+
+            function playAudio(id, rate) {
+                audio.pause();
+                audio.src = "audio/" + id + ".mp3";
+                audio.playbackRate = rate;
+                audio.play().catch(() => alert("Could not play audio/" + id + ".mp3. Check that the file exists."));
+            }
+           const STOP = ["i","a","an","the","to","is","am","me","my","do","does","can","you","for","of","in","at","it"];
+
+            function esc(s) {
+                return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            }
+
+// Your phrase card layout, shared by the image clicks and the search
+            function renderPhrases(title, list) {
+                const out = document.getElementById("results");
+                if (!list.length) {
+                    out.innerHTML = '<p class="msg">No phrase found. Try a simpler word like bus, doctor, water or lost.</p>';
+                    return;
+                }
+                out.innerHTML = "<h2>" + title + "</h2>" + list.map(p => `
+                <div class="phrase">
+                <h3 lang="kn">${p.kannada}</h3>
+                 <p class="pron">${p.pronunciation}</p>
+                <p>${p.english}</p>
+                <div style="display:grid;grid-template-columns: auto auto;grid-template-rows:auto auto;gap: 12px;justify-content: start;">
+                <p style="justify-content:center;">Play:</p><p  style="justify-content:center;">Slow:</p>
+                <button class="play" onclick="playAudio('${p.id}', 1)"> 🔊</button>
+                <button onclick="playAudio('${p.id}', 0.7)"> 🐢</button></div>
+                </div>`).join("");
+            }
+
+            function show(key) {
+                const out = document.getElementById("results");
+                document.getElementById("q").value = "";
+
+                boxes.forEach(b => b.classList.toggle("active", b.dataset.key === key));
+
+                if (loadFailed) {
+                    out.innerHTML = '<p class="msg">Could not load phrases.json. If you opened this file directly, run a local server (python -m http.server) and open http://localhost:8000.</p>';
+                    return;
+                }
+                if (!data[key]) {
+                     out.innerHTML = '<p class="msg">Loading sounds... please click again in a moment :).</p>';
+                    return;
+                }
+
+                 const title = key.charAt(0).toUpperCase() + key.slice(1);
+                renderPhrases(title, data[key]);
+                out.scrollIntoView({ behavior: "smooth" });
+            }
+
+            function search(query) {
+                const out = document.getElementById("results");
+                boxes.forEach(b => b.classList.remove("active"));
+
+                const raw = query.trim().toLowerCase();
+                if (!raw) { out.innerHTML = ""; return; }
+
+                if (loadFailed) {
+                    out.innerHTML = '<p class="msg">Could not load phrases.json. If you opened this file directly, run a local server (python -m http.server) and open http://localhost:8000.</p>';
+                    return;
+                }
+                if (!Object.keys(data).length) {
+                    out.innerHTML = '<p class="msg">Loading sounds... please try again in a moment :).</p>';
+                     return;
+                }
+
+                let terms = raw.split(/\s+/).filter(t => !STOP.includes(t));
+                if (!terms.length) terms = raw.split(/\s+/);
+
+                const all = Object.keys(data).flatMap(k => data[k].map(p => ({ ...p, situation: k })));
+                const results = all
+                .map(p => {
+                    let score = 0;
+                    terms.forEach(t => {
+                        p.tags.forEach(tag => {
+                            if (tag === t) score += 3;
+                            else if (tag.includes(t)) score += 2;
+                        });
+                        if (p.english.toLowerCase().includes(t)) score += 2;
+                        if (p.pronunciation.toLowerCase().includes(t)) score += 1;
+                        if (p.situation.includes(t)) score += 1;
+                    });
+                    return { p, score };
+                })
+                .filter(x => x.score > 0)
+                .sort((a, b) => b.score - a.score)
+                .map(x => x.p);
+
+                renderPhrases('Results for "' + esc(query.trim()) + '"', results);
+            }
+
+            document.getElementById("q").addEventListener("input", e => search(e.target.value));
+            let bigId = "";
+
+            function findPhrase(id) {
+                for (const k of Object.keys(data)) {
+                     const hit = data[k].find(p => p.id === id);
+                    if (hit) return hit;
+                }
+                return null;
+            }
+
+            function showBig(id) {
+                const p = findPhrase(id);
+                if (!p) return;
+                bigId = id;
+                document.getElementById("bigKn").textContent = p.kannada;
+                document.getElementById("bigPron").textContent = p.pronunciation;
+                document.getElementById("bigEng").textContent = p.english;
+                document.getElementById("big").showModal();
+            }
+
+            document.getElementById("big").addEventListener("click", e => {
+                if (e.target.id === "big") e.target.close();
+            });
+        </script>
+    </body>
+</html>

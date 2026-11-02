@@ -1,0 +1,42 @@
+{
+  "transport": [
+    {"id": "tr1", "kannada": "ಬಸ್ ನಿಲ್ದಾಣ ಎಲ್ಲಿದೆ?", "pronunciation": "Bus nildaana ellide?", "english": "Where is the bus stand?", "tags": ["bus", "stand", "stop", "where", "station"]},
+    {"id": "tr2", "kannada": "ಈ ಬಸ್ ಮೈಸೂರಿಗೆ ಹೋಗುತ್ತದೆಯಾ?", "pronunciation": "Ee bus Mysoorige hoguttadeya?", "english": "Does this bus go to Mysuru?", "tags": ["bus", "mysuru", "mysore", "go", "destination"]},
+    {"id": "tr3", "kannada": "ಟಿಕೆಟ್ ಎಷ್ಟು?", "pronunciation": "Ticket eshtu?", "english": "How much is the ticket?", "tags": ["ticket", "price", "fare", "cost", "how much"]},
+    {"id": "tr4", "kannada": "ಇಲ್ಲಿ ನಿಲ್ಲಿಸಿ", "pronunciation": "Illi nillisi", "english": "Please stop here", "tags": ["stop", "auto", "taxi", "here", "drop"]},
+    {"id": "tr5", "kannada": "ಮೀಟರ್ ಹಾಕಿ", "pronunciation": "Meter haaki", "english": "Please turn on the meter", "tags": ["meter", "auto", "taxi", "fare"]},
+    {"id": "tr6", "kannada": "ಮುಂದಿನ ಬಸ್ ಯಾವಾಗ ಬರುತ್ತದೆ?", "pronunciation": "Mundina bus yaavaaga baruttade?", "english": "When does the next bus come?", "tags": ["next", "bus", "when", "time", "wait"]}
+  ],
+  "shopping": [
+    {"id": "sh1", "kannada": "ಇದರ ಬೆಲೆ ಎಷ್ಟು?", "pronunciation": "Idara bele eshtu?", "english": "How much does this cost?", "tags": ["price", "cost", "how much", "buy"]},
+    {"id": "sh2", "kannada": "ಸ್ವಲ್ಪ ಕಡಿಮೆ ಮಾಡಿ", "pronunciation": "Swalpa kadime maadi", "english": "Please reduce the price a little", "tags": ["discount", "bargain", "cheaper", "reduce", "less"]},
+    {"id": "sh3", "kannada": "ನನಗೆ ಇದು ಬೇಕು", "pronunciation": "Nanage idu beku", "english": "I want this", "tags": ["want", "need", "buy", "this"]},
+    {"id": "sh4", "kannada": "ನನಗೆ ಇದು ಬೇಡ", "pronunciation": "Nanage idu beda", "english": "I don't want this", "tags": ["no", "dont want", "refuse", "decline"]},
+    {"id": "sh5", "kannada": "ಚಿಲ್ಲರೆ ಇದೆಯಾ?", "pronunciation": "Chillare ideya?", "english": "Do you have change?", "tags": ["change", "money", "cash", "coins"]},
+    {"id": "sh6", "kannada": "ಬಿಲ್ ಕೊಡಿ", "pronunciation": "Bill kodi", "english": "Please give the bill", "tags": ["bill", "receipt", "pay", "payment"]}
+  ],
+  "food": [
+    {"id": "fd1", "kannada": "ನನಗೆ ನೀರು ಬೇಕು", "pronunciation": "Nanage neeru beku", "english": "I need water", "tags": ["water", "drink", "thirsty"]},
+    {"id": "fd2", "kannada": "ಒಂದು ಮಸಾಲೆ ದೋಸೆ ಕೊಡಿ", "pronunciation": "Ondu masale dose kodi", "english": "Please give me one masala dosa", "tags": ["dosa", "order", "breakfast", "menu", "masala"]},
+    {"id": "fd3", "kannada": "ಖಾರ ಕಡಿಮೆ ಹಾಕಿ", "pronunciation": "Khaara kadime haaki", "english": "Please make it less spicy", "tags": ["spicy", "less", "mild", "chilli", "hot"]},
+    {"id": "fd4", "kannada": "ನಾನು ಸಸ್ಯಾಹಾರಿ", "pronunciation": "Naanu sasyaahaari", "english": "I am vegetarian", "tags": ["vegetarian", "veg", "diet", "no meat"]},
+    {"id": "fd5", "kannada": "ಬಿಲ್ ಕೊಡಿ", "pronunciation": "Bill kodi", "english": "The bill, please", "tags": ["bill", "pay", "restaurant", "check"]},
+    {"id": "fd6", "kannada": "ತುಂಬಾ ರುಚಿಯಾಗಿದೆ", "pronunciation": "Tumba ruchiyaagide", "english": "It is very tasty", "tags": ["tasty", "delicious", "compliment", "good"]}
+  ],
+  "healthcare": [
+    {"id": "hc1", "kannada": "ನನಗೆ ಆರೋಗ್ಯ ಸರಿಯಿಲ್ಲ", "pronunciation": "Nanage aarogya sariyilla", "english": "I am not feeling well", "tags": ["sick", "unwell", "ill", "not well"]},
+    {"id": "hc2", "kannada": "ನನಗೆ ತಲೆನೋವು ಇದೆ", "pronunciation": "Nanage talenovu ide", "english": "I have a headache", "tags": ["headache", "head", "pain"]},
+    {"id": "hc3", "kannada": "ಡಾಕ್ಟರ್ ಎಲ್ಲಿದ್ದಾರೆ?", "pronunciation": "Doctor elliddaare?", "english": "Where is the doctor?", "tags": ["doctor", "where", "clinic", "hospital"]},
+    {"id": "hc4", "kannada": "ಹತ್ತಿರದ ಆಸ್ಪತ್ರೆ ಎಲ್ಲಿದೆ?", "pronunciation": "Hattirada aaspatre ellide?", "english": "Where is the nearest hospital?", "tags": ["hospital", "nearest", "emergency", "where"]},
+    {"id": "hc5", "kannada": "ನನಗೆ ಔಷಧಿ ಬೇಕು", "pronunciation": "Nanage aushadhi beku", "english": "I need medicine", "tags": ["medicine", "pharmacy", "tablet", "drug"]},
+    {"id": "hc6", "kannada": "ದಯವಿಟ್ಟು ಸಹಾಯ ಮಾಡಿ", "pronunciation": "Dayavittu sahaaya maadi", "english": "Please help me", "tags": ["help", "emergency", "urgent", "please"]}
+  ],
+  "directions": [
+    {"id": "dr1", "kannada": "ಈ ಜಾಗ ಎಲ್ಲಿದೆ?", "pronunciation": "Ee jaaga ellide?", "english": "Where is this place?", "tags": ["where", "place", "address", "location"]},
+    {"id": "dr2", "kannada": "ನೇರವಾಗಿ ಹೋಗಿ", "pronunciation": "Neeravaagi hogi", "english": "Go straight", "tags": ["straight", "forward", "ahead", "direction"]},
+    {"id": "dr3", "kannada": "ಬಲಕ್ಕೆ ತಿರುಗಿ", "pronunciation": "Balakke tirugi", "english": "Turn right", "tags": ["right", "turn", "direction"]},
+    {"id": "dr4", "kannada": "ಎಡಕ್ಕೆ ತಿರುಗಿ", "pronunciation": "Edakke tirugi", "english": "Turn left", "tags": ["left", "turn", "direction"]},
+    {"id": "dr5", "kannada": "ಇಲ್ಲಿಂದ ಎಷ್ಟು ದೂರ?", "pronunciation": "Illinda eshtu doora?", "english": "How far is it from here?", "tags": ["far", "distance", "how far", "near"]},
+    {"id": "dr6", "kannada": "ನನಗೆ ದಾರಿ ತಪ್ಪಿದೆ", "pronunciation": "Nanage daari tappide", "english": "I am lost", "tags": ["lost", "way", "route", "help", "path"]}
+  ]
+}
